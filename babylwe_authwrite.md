@@ -143,3 +143,6 @@ print(flag)
 透過把這些向量放進格子基底並用 BKZ 找短向量，可以找到形如 e' = u*e + v*one 的短向量。
 解出 u, v 後可還原真正的誤差 e，再從 b - e 求得秘密 s。
 s 經 SHA-256 決定 AES 金鑰與 nonce，最後解密出 flag。
+
+# 作者blog writeup 
+  - https://blog.maple3142.net/2023/11/05/tsg-ctf-2023-writeups/
