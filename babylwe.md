@@ -1,7 +1,14 @@
----
-title: Untitled
+## LWE密碼學應用
+A是一個m x n矩陣，s是一個n維向量，e是一個m維向量。
+定義LWE(s,e) : b = As + e。
+由此可以構造一個對稱加密算法。
+加密算法定義如下:
+s作為密鑰k使用；
+(A,e)這一組數據在加密時隨機生成；
+由s, A, e所求得的值b作為一次性密碼本的密鑰使用，同密文m進行異或操作。
+這一算法和傳統對稱密鑰加密算法的區別的關鍵在於，加密方不將誤差數據e傳送給解密方，導致解密方所解得明文存在一個小的誤差。
 
----
+
 
 ```# Import necessary libraries
 import os
@@ -86,9 +93,9 @@ def solve_lwe_and_decrypt(A_list, b_list, ct_bytes):
         return None
 
 # The original string representation of the file content
-file_content = """A = [
-b = [
-ct = b')c\xd7\x11.?j\xe0\x89>\xcf\x15u&\x00el\x86\xae{\xfdv\x97\xe4\xff\x905\x13x\xd5D\x84\xf3\x8e\xb6\'lu\xdd@N>\x91\x1e\xd6\xca"\xdd\xb3?\x92\x1c\x01\xbe'
+file_content = """A = [...]
+b = [...]
+ct = ...
 """
 
 # Convert string to usable Python objects
@@ -111,11 +118,14 @@ if flag:
 else:
     print("\n解密失敗。請檢查輸入資料或程式碼。")
 ```
-跑出來是flag.decode()
+
+
+
+### 跑出來是flag.decode()
 ---
 - 修改 flag.decode()
 -- flag.decode('latin1') 
 -- flag.decode('hex')
-- 出來是
+- 最後解出來是
     0O·oioi6o!￡t 7U§Myio:G?m?c?T@ioYC )jDU?iCC?E??c
 
