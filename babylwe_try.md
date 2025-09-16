@@ -127,6 +127,7 @@ else:
 -- flag.decode('latin1')   
 -- flag.decode('hex')  
 - 最後解出來是  
-    0O·oioi6o!￡t 7U§Myio:G?m?c?T@ioYC )jDU?iCC?E??c  
+    0O·oioi6o!￡t 7U§Myio:G?m?c?T@ioYC )jDU?iCC?E??c
+  
 #### LWE 演算法參考
 https://www.maths.ox.ac.uk/system/files/attachments/lattice-reduction-and-attacks.pdf  
