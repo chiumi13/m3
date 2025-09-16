@@ -118,14 +118,15 @@ if flag:
 else:
     print("\n解密失敗。請檢查輸入資料或程式碼。")
 ```
-
-
-
-### 跑出來是flag.decode()
----
-- 修改 flag.decode()
--- flag.decode('latin1') 
--- flag.decode('hex')
-- 最後解出來是
-    0O·oioi6o!￡t 7U§Myio:G?m?c?T@ioYC )jDU?iCC?E??c
-
+  
+  
+  
+### 跑出來是flag.decode()  
+---  
+- 修改 flag.decode()  
+-- flag.decode('latin1')   
+-- flag.decode('hex')  
+- 最後解出來是  
+    0O·oioi6o!￡t 7U§Myio:G?m?c?T@ioYC )jDU?iCC?E??c  
+#### LWE 演算法參考
+https://www.maths.ox.ac.uk/system/files/attachments/lattice-reduction-and-attacks.pdf  
